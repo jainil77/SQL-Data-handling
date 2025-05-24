@@ -133,6 +133,7 @@ conn.end();*/
     try {
       conn.query(q, (err, result) => {
         if (err) throw err;
+        
         console.log("added new user");
         res.redirect("/users");
       });
