@@ -107,7 +107,7 @@ conn.end();*/
         }
         else {
           let q2 = `UPDATE user SET username='${newusername}' WHERE id='${id}'`;
-          conn.query(q2,(err,result) => {
+          conn.query(q2,(err,updres) => {
             if (err) throw err;
             res.redirect("/users");
           })
